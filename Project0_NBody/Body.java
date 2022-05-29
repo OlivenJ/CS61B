@@ -107,8 +107,17 @@ public class Body {
     }
 
 
-    //public double update(double dt, int xForce, int yForce){
+    public void draw() {
 
-    //}
+        String imageToDraw = "images/" + this.imgFileName;
+
+        //StdDraw.enableDoubleBuffering();
+
+        StdDraw.picture(this.xxPos, this.yyPos, imageToDraw);
+        StdDraw.show();
+        //StdDraw.pause(2000);
+
+
+    }
 
 }
